@@ -16,7 +16,7 @@
 }
 
 html {
-    color-scheme: dark;
+    color-scheme: light;
 }
 
 /*navigation styles starts here*/
@@ -97,7 +97,7 @@ nav a {
     font-weight: bold;
     text-transform: uppercase;
     opacity: 0;
-    transition: opacity 250ms ease-in-out 250ms;
+    transition: opacity 150ms ease-in-out;
 }
 
 nav a:hover {
@@ -110,6 +110,62 @@ nav a:hover {
 
 .nav-toggle:checked ~ nav a {
     opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+@media screen and (min-width: 800px) {
+    .nav-toggle-label {
+        display: none;
+    }
+  
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+}
+
+.logo {
+    grid-column: 2 / 3;
+}
+
+nav {
+    all: unset; 
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav a {
+    opacity: 1;
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 3px;
+    background: black;
+    position: absolute;
+    top: -0.75em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    transform: scale(1,1);
+}
 }
 
 body {
@@ -130,7 +186,6 @@ section {
 }
 
 .photo {
-    
     text-align: center;
 }
 
