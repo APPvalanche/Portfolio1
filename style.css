@@ -9,6 +9,7 @@
 
 :root {
     --background: rgba( 80,84,68,0.25);
+    --clr-primary-nav: #E7E1DA;
     --clr-primary-200: #d8c3a5;
     --clr-primary-400: #e98074;
     --clr-primary-900: #8E8D8A;
@@ -101,7 +102,7 @@ nav li {
 nav a {
     color: black;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
     opacity: 0;
@@ -179,7 +180,7 @@ nav a:hover::before {
 /* html style starts here */
 body {
     font-family: var(--ff-primary), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.5;
     margin: 0;
 }
@@ -187,8 +188,8 @@ body {
 .h1-main {
     font-family: var(--ff-primary), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--clr-primary-900);
-    font-size: 2em;
-    line-height: 1.6em;
+    font-size: 1.8em;
+    line-height: 1.4em;
     text-decoration: none;
 }
 
@@ -207,7 +208,7 @@ a {
 
 h1,h2,h3 {
     font-family: var(--ff-primary), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    line-height: 1.2;
+    line-height: 1.1;
     font-weight: 900;
 }
 
@@ -216,9 +217,9 @@ h1 {
 }
 
 p {
-    font-size: 1.2em;
-    line-height: 1.6em;
-    word-spacing: 0.6rem;
+    font-size: 0.9rem;
+    line-height: 1.4em;
+    word-spacing: 0.5rem;
 }
 
 .wrapper {
@@ -232,7 +233,6 @@ p {
 section {
     padding-block: 5rem;
     text-align: center;
-    border: solid black 2px;
     background-color: var(--clr-neutral-100);
 }
 
@@ -241,12 +241,14 @@ section {
 }
 
 .introduction {
-    
+
 }
 
 .highlight li {
     list-style-type: none;
     text-align: justify;
+    font-weight: 800;
+    font-size: 1.8rem;
 }
 
 .education {
@@ -266,8 +268,14 @@ img {
 }
 
 .split {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 15px;
+    max-width: auto;
+    background-color: var(--clr-primary-nav);
     display: flex;
     flex-direction: column;
+    margin-block: auto;
 }
 
 @media (min-width: 40em) {
