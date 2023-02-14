@@ -238,6 +238,7 @@ section {
 
 .photo {
     text-align: center;
+    padding-top: 10rem;
 }
 
 .introduction {
@@ -268,16 +269,34 @@ img {
 }
 
 .split {
-    border: 1px solid black;
-    border-radius: 10px;
-    margin: 15px;
-    max-width: auto;
+    width: min(90%, 70rem);
+    max-width: 50rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    text-align: center;
     background-color: var(--clr-primary-nav);
+    border: var(--clr-primary-900) 1px solid;
+    border-radius: 0.8em;
+    box-shadow: 10px 10px 15px var(--clr-primary-900);
     display: flex;
-    flex-direction: column;
-    margin-block: auto;
+    margin-block: 1em;
 }
 
+
+.left {
+    float: left;
+    width: 50%;
+    padding: 1em;
+    text-align: center;
+}
+
+.right {
+    float: right;
+    width: 50%;
+    padding: 1em;
+    align-content: center;
+}
 @media (min-width: 40em) {
     .split {
         flex-direction: row;
