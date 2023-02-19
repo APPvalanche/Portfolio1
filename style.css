@@ -219,6 +219,7 @@ h1 {
 
 p {
     font-size: 0.9rem;
+    font-weight: 500;
     line-height: 1.4em;
     word-spacing: 0.5rem;
 }
@@ -241,14 +242,19 @@ section {
     text-align: center;
 }
 
-.introduction {
+.highlight {
+    background-image: url(images/pc_set1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-block: 10rem;
+    border: 2px solid black;  
 }
 
 .highlight li {
     list-style-type: none;
-    text-align: justify;
-    font-weight: 800;
     font-size: 1.8rem;
+    font-weight: bolder;
+    text-align: justify;
 }
 
 .education {
@@ -315,18 +321,9 @@ ol {
     color: var(--clr-primary-900);
 }
 
-.socialmedia {
-    width: min(90%, 70rem);
-    max-width: 50rem;
-    margin-inline: auto;
-    padding-inline: 1rem;
-    padding-block: 1rem;
-    text-align: center;
-    display: flex;
-    margin-block: 1em;
-
-}
-
-.socialmedia a {
-    font-size: 1.5rem;
+.icons, .direction {
+    font-size: 1.2rem;
+    display: inline-block;
+    align-items: center;
+    padding: 1em;
 }
