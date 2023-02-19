@@ -257,20 +257,9 @@ section {
     text-align: justify;
 }
 
-.education {
-
-}
-
-.courses {
-
-}
-
 img {
     display: block;
     max-width: 100%; 
-}
-.projects {
-
 }
 
 .split{
@@ -306,6 +295,8 @@ img {
 @media only screen and (max-width: 640px) {
     .split {
         display: block;
+        border: hidden;
+        box-shadow: none;
     }
     .left {
         width: 100%;
