@@ -12,15 +12,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     </head>
     <body>
         <header>
-            <h1 class="logo">My portfolio.</h1>
+            <h1 class="logo">Z.P_ortfolio</h1>
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
                 <nav>
                     <ul>
                         <li><a href="#info">About</a></li>
-                        <li><a href="#myProjects">MyProjects</a></li>
+                        <li><a href="#my-projects">MyProjects</a></li>
                         <li><a href="#Qualification">Qualification</a></li>
                         <li><a href="#contacts" >Contact</a></li>
                     </ul> 
@@ -29,18 +31,30 @@
                     <span></span>
                 </label>
         </header>
-        <section class="skew-top">
-            <div>
-                <p>skew</p>
-            </div>
-        </section>
-       
+
+           
         <section class="hidden" id="info">
             <div class="wrapper">
                 <h1 class="h1-main">Hi, my name is <a href="https://linkedin.com/in/petr-zajkas-839592255" target="_blank"><element id="h1-main-name">Petr Zajkas</element></a> and I am a web developer!</h1>
             </div>
         </section>
-        
+    
+        <section class="about-me">
+            <div class="wrapper">
+                <div class="even-columns">
+                    <div class="column-text">
+                        <h1>About me</h1>
+                        <p>Front-End Web Developer | HTML/CSS & JavaScript | Python | React | Installs and tests user interface elements of websites.</p>
+                        <button class="button"><a href="#contacts">Hire me</a></button>
+                    </div>
+                    <div class="column-image">
+                        <img src="images/selfieB&W1.jpg" alt="selfie in circle frame black and white" width="75%" height="75%">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <section id="introduction">
             <div class="wrapper">
                 <p>It is my main priority to take care of my customers.
@@ -53,28 +67,29 @@
             </div>
         </section>
 
-
-        <section class="highlight">
+        <section  id="carousel">
             <div class="wrapper">
-                <ul>
-                    <li id="highlight" data-text="web">Responsive Web Design</li>
-                    <li>Functionality</li>
-                    <li>Website Redesigning</li>
-                    <li id="highlight" data-text="creativity">Creativity</li>
-                    <li>Corporate Web Designing</li>
-                    <li>E-Commerce Website</li>
-                    <li>Website Marketing</li>
-                </ul>
+                <div class="main-carousel">
+                    <div class="cell"><img src="images/carousel1.jpg"></div>
+                    <div class="cell"><img src="images/carousel2.jpg"></div>
+                    <div class="cell"><img src="images/carousel3.jpg"></div>
+                </div>
+            </div>
+            <div>
+                <button class="button"><a href="https://github.com/PetrZajkasWebdesign" target="blank">Get Social</a></button>
             </div>
         </section>
-        
-        <section id="myProjects">
+      
+        <section class="hidden" id="my-projects">
             <div class="wrapper">
-                    <section class="hidden">
-                        <h1>My Projects</h1>
+                    <h1>My Projects</h1>
                     <p>Here are some of the projects I've worked on during my studies. 
                     The content of this section changes continuously as I develop my skills. I continuously update it. </p>
-                    </section>   
+            </div>
+        </section>   
+        
+        <section>
+            <div class="wrapper" id="my-projects-background">
                     <section class="MusiconStore">
                         <section class="split">
                                 <div class="left">
@@ -82,7 +97,7 @@
                                     <p>This modern responsive website was build in JavaScript.</p>
                                 </div>
                                 <div class="right">
-                                    <a href="https://petrzajkaswebdesign.github.io/MusicStore/index.html" target="_blank"></a>
+                                    <a href="https://petrzajkaswebdesign.github.io/MusicStore/index.html" target="_blank">
                                     <img src="images/Musicon.png" alt="screeshot of Music store pink guitar background image" width="273.2" height="153.6"></a>
                                 </div>
                         </section>
@@ -133,7 +148,6 @@
            </div>  
         </section>  
         
-        
         <section class="hidden" id="Qualification">
             <div class="wrapper">
                 <h1>Qualification</h1>
@@ -181,9 +195,9 @@
                         <div>
                             <div class="icons">
                                 <ol>
-                                    <li><a href="https://en-gb.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook" style="color: black"></i></a></li>
-                                    <li><a href="https://github.com/PetrZajkasWebdesign" target="_blank"><i class="fa-brands fa-github" style="color: black"></i></a></li>
-                                    <li><a href="https://linkedin.com/in/petr-zajkas-839592255" target="_blank"><i class="fa-brands fa-linkedin" style="color: black"></i></a></li>
+                                    <li><a href="https://en-gb.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook" style="color: #ffde53"></i></a></li>
+                                    <li><a href="https://github.com/PetrZajkasWebdesign" target="_blank"><i class="fa-brands fa-github" style="color: #ffde53"></i></a></li>
+                                    <li><a href="https://linkedin.com/in/petr-zajkas-839592255" target="_blank"><i class="fa-brands fa-linkedin" style="color: #ffde53"></i></a></li>
                                 </ol>
                              </div>
                              <div class="direction">   
@@ -203,5 +217,14 @@
                 <p>Copyright © 2023 All Rights Reserved || PetrZajkasWebdesign</p>
             </div>
     </footer>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script type="text/javascript">
+        $('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  wrapAround: true,
+  freeScroll: true
+});
+    </script>
 </html>
 
