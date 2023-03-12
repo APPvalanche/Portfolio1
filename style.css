@@ -383,6 +383,17 @@ img {
     border: solid 2px var(--clr-primary-900);
 }
 
+#selfie-top {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%; 
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: solid 2px var(--clr-primary-900);
+    border-radius: 0 2rem 0 2rem;
+}
+
 .even-columns {
     padding: 1rem;
     text-align: center;
