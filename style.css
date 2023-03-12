@@ -245,12 +245,13 @@ a {
 }
 
 #gradient-border {
+    background-color: var(--clr-primary-900);
     border-inline-start: 4px solid;
     border-block-start: 4px solid;
     border-image-source:
         radial-gradient(
             circle at top left,
-            var(black), transparent 50%);
+            var(--clr-primary-200), transparent 50%);
         border-image-slice: 1;
         padding: 30px;
 }
@@ -265,7 +266,7 @@ h1 {
 }
 
 h2{
-    color: var(--clr-accent-900);
+    color: var(--clr-accent-400);
     font-family: var(--ff-primary), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.1;
     font-weight: 900;
@@ -345,7 +346,7 @@ section {
     height: 600px;
     margin: 0 15px;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 2rem;
 }
 
 .cell img {
@@ -354,6 +355,9 @@ section {
     object-fit: cover;
 }
 
+#carousel-button {
+    margin-top: 3rem;
+}
 .highlight {
     background-image: url(images/pc_set1.png);
     background-size: cover;
@@ -458,6 +462,8 @@ img {
     .split {
         display: block;
         border: hidden; 
+        background-color: var(--clr-primary-900);
+        box-shadow: none;
     }
     .left {
         width: 100%;
@@ -474,22 +480,25 @@ ol {
 }
 
 .icons, .direction {
+    margin: 0;
     font-size: 1.2rem;
     display: inline-block;
     align-items: center;
+    text-align: center;
+    align-content: center;
     padding: 0.5em;
 }
 
 footer {
-    padding-block: 5rem;
+    padding-block: 3rem;
     text-align: center;
-    color: var(--clr-accent-600);
-    text-decoration: overline 1px var(--clr-accent-900);
+    text-decoration: overline 1px var(--clr-accent-400);
     background-color: var(--clr-primary-400);
-    box-shadow: 0 8px 32px 0 var(black);
 }
 
-/*
+footer p {
+    color: var(--clr-accent-400);
+}
 
 #glass {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -500,4 +509,3 @@ footer {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 
 }
-*/
