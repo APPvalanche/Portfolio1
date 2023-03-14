@@ -4,8 +4,8 @@
     --background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
     --clr-primary-nav: #E7E1DA;
     --clr-primary-200: #D2D3d3;
-    --clr-primary-400: #121326;
-    --clr-primary-900: #111024;
+    --clr-primary-400: #232629/*#121326*/;
+    --clr-primary-900: #191b1d/*#111024*/;
 
     --clr-accent-400: #fdfdfe;
     --clr-accent-500: #ffde53;
@@ -174,7 +174,7 @@ nav a::before {
     content: '';
     display: block;
     height: 3px;
-    background: var(--clr-primary-400);
+    background: var(--clr-accent-600);
     position: absolute;
     top: -0.75em;
     left: 0;
@@ -229,6 +229,7 @@ a {
     width: 8rem;
     border: solid 1px var(--clr-accent-600);
     border-radius: 0.8rem;
+    box-shadow: 10px 10px 10px black;
     color: var(--clr-primary-200);
     background-color: var(--clr-accent-600);
     text-transform: uppercase;
@@ -239,13 +240,29 @@ a {
     background-color: var(--clr-accent-900);
 }
 
-#introduction {
+.icons {
+    justify-content: center;
+    align-items: center;
+    display: inline; 
+    width: 100%;
+    justify-content: stretch;
+}
+
+.icons img {
+    margin-inline: 2rem;
+    margin-block: 1rem;
+    display: inline;
+}
+
+.introduction {
     background-color: var(--clr-primary-900);
     color: var(--clr-accent-900);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 #gradient-border {
     background-color: var(--clr-primary-900);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     border-inline-start: 4px solid;
     border-block-start: 4px solid;
     border-image-source:
@@ -270,8 +287,9 @@ h2{
     font-family: var(--ff-primary), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.1;
     font-weight: 900;
-    word-spacing: 0.3rem;
-    letter-spacing: 0.2rem;
+    font-size: 1.2rem;
+    word-spacing: 0.15rem;
+    letter-spacing: 0.1rem;
 }
 
 h3 {
@@ -335,6 +353,7 @@ section {
 
 .about-me {
     background-color: var(--clr-primary-400);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 #carousel {
@@ -342,7 +361,7 @@ section {
 }
 
 .cell {
-    width: 33%;
+    width: 100%;
     height: 600px;
     margin: 0 15px;
     overflow: hidden;
@@ -357,20 +376,6 @@ section {
 
 #carousel-button {
     margin-top: 3rem;
-}
-.highlight {
-    background-image: url(images/pc_set1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-block: 10rem;
-    border: 2px solid black;  
-}
-
-.highlight li {
-    list-style-type: none;
-    font-size: 1.8rem;
-    font-weight: bolder;
-    text-align: justify;
 }
 
 img {
@@ -390,7 +395,8 @@ img {
     justify-content: center;
     text-align: center;
     align-items: center;
-    border: solid 2px var(--clr-primary-900);
+    border: solid 2px var(--clr-accent-400);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     border-radius: 0 2rem 0 2rem;
 }
 
@@ -423,6 +429,7 @@ img {
 .courses {
     background-color: var(--clr-primary-400);
 }
+
 .container {
     max-width: 900px;
     height: 300px;
@@ -505,6 +512,7 @@ footer {
     text-align: center;
     text-decoration: overline 1px var(--clr-accent-400);
     background-color: var(--clr-primary-400);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 footer p {
