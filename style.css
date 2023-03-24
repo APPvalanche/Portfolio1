@@ -236,23 +236,24 @@ a {
 }
 
 .button:hover {
-    border-color: var(--clr-accent-900);
-    background-color: var(--clr-accent-900);
+    border-color: goldenrod;
+    background-color: goldenrod;
 }
 
-.icons {
+.dev-icons {
     margin: 0;
     justify-content: center;
     align-items: center;
-    display: inline; 
+    display: flex; 
     width: 100%;
-    justify-content: stretch;
+    
 }
 
 .icons img {
     margin-inline: 2rem;
     margin-block: 1rem;
     display: inline;
+    justify-content: stretch;
 }
 
 .introduction {
@@ -432,6 +433,96 @@ img {
 .courses {
     background-color: var(--clr-primary-400);
     box-shadow: 0 8px 30px 0;
+}
+
+/* myprojects skewed */
+
+.myprojects p {
+    color: #8f8f8f;
+    font-size: 0.9rem;
+    line-height: 23px;
+}
+
+.myprojects h1 {
+    margin: 0;
+}
+
+.skewed {
+    width: 45em;
+    color: #1f1f1f;
+    display: flex;
+    background: #111;
+    margin: 2em 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.text {
+    padding: 1.5em;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.myprojects a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.image {
+    width: 50%;
+    height: 17em;
+    position: relative;
+    overflow: hidden;
+}
+
+.image::before {
+    content: '';
+    position: absolute;
+    left: -6.1em;
+    top: 50%;
+    transform: translateY(-50%) rotate(20deg);
+    background: #111;
+    width: 40%;
+    height: 140%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.skewed-left .image::before {
+    transform: translateY(-50%) rotate(-20deg);
+    left: initial;
+    right: -6.1em;
+}
+
+.myprojects img {
+    width: 140%;
+}
+
+@media screen and (max-width: 750px) {
+    .skewed {
+        display: block;
+        width: 20em;
+    }
+    .image, .text {
+        width: 100%;
+    }
+    .myprojects img {
+        width: 160%;
+    }
+    .skewed .image::before {
+        width: 120%;
+        height: 40%;
+        top: -5em;
+        left: 50%;
+        transform: translateX(-50%) rotate(10deg);
+    }
+     .skewed-left .image::before {
+        transform: translateX(-50%) rotate(-10deg);
+        top: initial;
+        bottom: -5em;
+     }
+     
 }
 
 .container {
