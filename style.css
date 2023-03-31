@@ -316,8 +316,10 @@ h3 {
     letter-spacing: 0.2rem;
 }
 
-.logo {
-    color: var(--clr-accent-400);
+.logo img {
+    height: 50px;
+    width: 50px;
+    border: none;
 }
 
 p {
