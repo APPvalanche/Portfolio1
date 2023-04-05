@@ -8,8 +8,8 @@
     --clr-primary-900: #000000/*#191b1d/*#111024*/;
 
     --clr-accent-400: #fdfdfe;
-    --clr-accent-500: #ffde53 /*#6fffe9*/;
-    --clr-accent-600: #ebbe43/*#5bc0be*/;
+    --clr-accent-500: #d2a740 /*#6fffe9*/;
+    --clr-accent-600: #daa520/*#5bc0be*/;
     --clr-accent-900: #a4a6b3;
    
     --ff-primary: "Michroma";
@@ -241,6 +241,23 @@ a {
     color: var(--clr-primary-900);
 }
 
+.button-main {
+    width: 20rem;
+    height: 3rem;
+    font-family: var(--ff-primary);
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: var(--clr-accent-600);
+    border: solid 2px var(--clr-accent-600);
+    border-radius: 0.1rem;
+}
+
+.button-main:hover {
+    background-color: var(--clr-accent-600);
+    border-color: var(--clr-accent-600);
+    color: var(--clr-primary-900);
+}
 
 .button {
     margin-block: 2rem;
@@ -248,17 +265,18 @@ a {
     font-weight: bold;
     height: 2rem;
     width: 8rem;
-    border: solid 1px var(--clr-accent-600);
+    border: solid 3px var(--clr-accent-600);
     border-radius: 0.1rem;
     box-shadow: 10px 10px 10px black;
-    color: var(--clr-primary-200);
+    color: var(--clr-primary-900);
     background-color: var(--clr-accent-600);
     text-transform: uppercase;
 }
 
 .button:hover {
-    border-color: goldenrod;
-    background-color: goldenrod;
+    border-color: var(--clr-accent-600);
+    background-color: transparent;
+    color: var(--clr-accent-600);
 }
 
 .dev-icons {
@@ -603,6 +621,23 @@ img {
 
     .right {
         width: 100%;
+    }
+
+    .h1-main {
+        font-size: 1.2rem;
+    }
+
+    .button-main {
+        width: 10rem;
+        height: 1.5rem;
+        font-size: 0.7rem;
+    }
+    #info {
+        padding-block: 8rem;
+    }
+
+    .sidebar {
+        margin-top: 400px;
     }
 }
 
