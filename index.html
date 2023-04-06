@@ -44,8 +44,8 @@
         <section id="info">
             <div class="wrapper">
                 <h1 class="h1-main">Hi, my name is <a href="https://github.com/PetrZajkasWebdesign" target="_blank"><element id="h1-main-name">Petr Zajkas</element></a> and I am a web developer!</h1>
-                <form target="_blank">
-                    <button class="button-main" type="submit" formacion="#contacts">Get in touch</a></button>
+                <form action="#contacts">
+                    <button type="submit" class="button-main">Get in touch</button>
                 </form>
             </div>
         </section>
@@ -55,9 +55,9 @@
                 <div class="even-columns">
                     <div class="column-text">
                         <h1>About me</h1>
-                        <p>Front-End Web Developer | HTML/CSS & JavaScript | Python | React | Installs and tests user interface elements of websites.</p>
-                        <form target="_blank">
-                            <button class="button" type="submit" formacion="#contacts">Hire me</a></button>
+                        <p>Full-Stack Web Developer | HTML/CSS & JavaScript | Python | React | Installs and tests user interface elements of websites.</p>
+                        <form action="#contacts">
+                            <button type="submit" class="button">Hire me</button>
                         </form>
                     </div>
                     <div class="column-image">
@@ -66,23 +66,10 @@
                 </div>
             </div>
         </section>
-
-        <section class="skills">
-            <div class="wrapper">
-                <h1>Skills</h1>
-                <div class="dev-icons">
-                    <img src="images/html-icon.png" alt="HTML5 icon" height= "68px" width="48px">
-                    <img id="css-icon" src="images/css-icon.png" alt="CSS3 icon" height= "67px" width="50px">
-                    <img src="images/JavaScript-icon.png" alt="JavaScript icon" height= "68px" width="49px">
-                    <img id="python-icon" src="images/python-icon.png" alt="Python icon" height= "60px" width="60px">
-                </div>
-            </div>
-        </section>
-
-
+ 
         <section class="introduction">
             <div class="wrapper">
-                <p>I will be your website designer and web developer, together we turn your ideas into a modern website.
+                <p>I will be your website designer and web developer. Together, we turn your ideas into a modern website.
                     It is my main priority to take care of customers.
                 </p>
                 <p>I aim to create modern-looking and affordable
@@ -91,20 +78,29 @@
             </div>
         </section>
 
-        <section  id="carousel">
+        <section class="skills">
             <div class="wrapper">
-                <div class="main-carousel">
-                    <div class="cell"><img src="images/carousel1.jpg"></div>
-                    <div class="cell"><img src="images/carousel2.jpg"></div>
-                    <div class="cell"><img src="images/carousel3.jpg"></div>
-                    <div class="cell"><img src="images/carousel4.jpg"></div>
-                    <div class="cell"><img src="images/carousel5.jpg"></div>
+                <h1>Skills</h1>
+                <div class="even-columns">
+                    <div class="dev-icon">
+                        <img src="images/html-icon.png" alt="HTML5 icon" height= "68px" width="48px">
+                        <p><strong>HTML</strong> is the primary markup language found on the internet.</p>
+                    </div>
+                    <div class="dev-icon">
+                        <img id="css-icon" src="images/css-icon.png" alt="CSS3 icon" height= "67px" width="50px">
+                        <p><strong>CSS</strong> is a cornerstone technology of the World Wide Web.</p>
+                    </div>
                 </div>
-            </div>
-            <div id="carousel-button">
-                <form target="_blank">
-                    <button class="button" type="submit" formacion="https://linkedin.com/in/petr-zajkas-839592255">Link me</a></button>
-                </form>
+                <div class="even-columns">
+                    <div class="dev-icon">
+                        <img src="images/JavaScript-icon.png" alt="JavaScript icon" height= "68px" width="49px">
+                        <p><strong>JavaScript</strong> is used to create dynamic website content.</p>
+                    </div>
+                    <div class="dev-icon">
+                        <img id="python-icon" src="images/python-icon.png" alt="Python icon" height= "60px" width="60px">
+                        <p><strong>Python</strong> is a high-level, general-purpose programming language.</p>
+                    </div>
+                </div>
             </div>
         </section>
       
@@ -200,29 +196,48 @@
             </div>
         </section>
         
+        <section  id="carousel">
+            <div class="wrapper">
+                <div class="main-carousel">
+                    <div class="cell"><img src="images/carousel1.jpg"></div>
+                    <div class="cell"><img src="images/carousel2.jpg"></div>
+                    <div class="cell"><img src="images/carousel3.jpg"></div>
+                    <div class="cell"><img src="images/carousel4.jpg"></div>
+                    <div class="cell"><img src="images/carousel5.jpg"></div>
+                </div>
+            </div>
+            <div id="carousel-button">
+                <form action="https://linkedin.com/in/petr-zajkas-839592255" target="_blank">
+                    <button type="submit" class="button">Link me</button>
+                </form>
+            </div>
+        </section>
         
         <section>
             <div class="wrapper">
                     <section id="contacts" class="hidden">
                     <h1>Contacts</h1>
                      <p>For more information, feel free to contact me! I can be contacted via the following links if you have any questions.</p>
-                    </section>   
-                        <div>
-                            <div class="icons">
-                                <ol>
-                                    <li><a href="https://en-gb.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook" style="color: #ffde53"></i></a></li>
-                                    <li><a href="https://github.com/PetrZajkasWebdesign" target="_blank"><i class="fa-brands fa-github" style="color: #ffde53"></i></a></li>
-                                    <li><a href="https://linkedin.com/in/petr-zajkas-839592255" target="_blank"><i class="fa-brands fa-linkedin" style="color: #ffde53"></i></a></li>
-                                </ol>
-                             </div>
-                             <div class="direction">   
-                                <ol>   
-                                    <li><i class="fa-solid fa-phone" style="color: #8E8D8A"></i>     +447754593800</li>
-                                    <li><i class="fa-solid fa-envelope" style="color: #8E8D8A;"></i>    petrzajkas@gmail.com</li>
-                                    <li><i class="fa-solid fa-location-dot" style="color: #8E8D8A;"></i>        Newport, United Kingdom</li>
-                                </ol>
-                            </div>
-                        </div>
+                    </section>
+            </div>
+        </section>
+
+        <section>   
+            <div class="wrapper" class="even-columns">
+                <div class="icons">
+                    <ol>
+                        <li><a href="https://en-gb.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook" style="color: goldenrod"></i></a></li>
+                        <li><a href="https://github.com/PetrZajkasWebdesign" target="_blank"><i class="fa-brands fa-github" style="color: goldenrod"></i></a></li>
+                        <li><a href="https://linkedin.com/in/petr-zajkas-839592255" target="_blank"><i class="fa-brands fa-linkedin" style="color: goldenrod"></i></a></li>
+                    </ol>
+                </div>
+                <div class="direction">   
+                    <ol>   
+                        <li><i class="fa-solid fa-phone" style="color: #8E8D8A"></i>     +447754593800</li>
+                        <li><i class="fa-solid fa-envelope" style="color: #8E8D8A;"></i>    petrzajkas@gmail.com</li>
+                        <li><i class="fa-solid fa-location-dot" style="color: #8E8D8A;"></i>        Newport, United Kingdom</li>
+                    </ol>
+                </div>
             </div>
         </section>
     
