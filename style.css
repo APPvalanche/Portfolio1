@@ -279,7 +279,7 @@ a {
     color: var(--clr-accent-600);
 }
 
-.dev-icon {
+#dev-icon {
     margin: 0;
     justify-content: center;
     align-items: center;
@@ -290,11 +290,11 @@ a {
     box-shadow: 0 0 10px white;
 }
 
-.dev-icon img {
+#dev-icon img {
     margin-left: 0.8rem ;
 }
 
-.dev-icon p {
+#dev-icon p {
     color: var(--clr-primary-200);
     padding: 0.5rem;
 }
@@ -360,6 +360,24 @@ p {
     word-spacing: 0.5rem;
 }
 
+/*Style for animation*/
+.animation-pulse, 
+.faded-left, 
+.faded-right,
+#zoom-in,
+#heart-beat {
+    opacity: 0;
+}
+
+.animation-pulse.animate__animated,
+.faded-left.animate__animated,
+.faded-right.animate__animated,
+#zoom-in.animate__animated,
+#heart-beat.animate__animated {
+opacity: 1;
+animation-duration: 1.2s;
+}
+
 /* Section styles starts here */
 .wrapper {
     width: min(90%, 70rem);
@@ -370,32 +388,10 @@ p {
 }
 
 section {
-    padding-block: 5rem;
+    padding-block: 6rem;
     text-align: center;
     background-color: var(--clr-primary-900);
     display: grid;
-}
-
-.hidden {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    background-color: var(--clr-primary-900);
-    transition: all 0.5s;
-}
-
-
-@media(prefers-reduced-motion) {
-    .hidden {
-        transition: none;
-    }
-}
-
-.show {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-    background: var(--background);
 }
 
 .about-me {
@@ -405,7 +401,6 @@ section {
 
 #carousel {
     background-color: var(--clr-primary-400);
-    box-shadow: 0 8px 30px 0;
 }
 
 #carousel button {
@@ -433,7 +428,6 @@ img {
     justify-content: center;
     text-align: center;
     align-items: center;
-    border: 2px solid var(--clr-primary-900);
 }
 
 #selfie-top {
@@ -466,7 +460,7 @@ img {
     }
 }
 
-.column-text{
+#column-text{
     text-align: left;
 }
 
@@ -492,7 +486,7 @@ img {
     color: #1f1f1f;
     display: flex;
     background: #111;
-    margin: 2em 0;
+    margin: 2em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.70);
 }
 

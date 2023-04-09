@@ -8,6 +8,7 @@
         <script src="https://kit.fontawesome.com/90f1cb7e10.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
         <script defer src="app.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" style="text/CSS" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,24 +44,26 @@
            
         <section id="info">
             <div class="wrapper">
-                <h1 class="h1-main">Hi, my name is <a href="https://github.com/PetrZajkasWebdesign" target="_blank"><element id="h1-main-name">Petr Zajkas</element></a> and I am a web developer!</h1>
-                <form action="#contacts">
-                    <button type="submit" class="button-main">Get in touch</button>
-                </form>
+                <div class="animation-pulse">
+                    <h1 class="h1-main">Hi, my name is <a href="https://github.com/PetrZajkasWebdesign" target="_blank"><element id="h1-main-name">Petr Zajkas</element></a> and I am a web developer!</h1>
+                    <form action="#contacts">
+                        <button type="submit" class="button-main">Get in touch</button>
+                    </form>
+                </div>
             </div>
         </section>
     
         <section class="about-me">
             <div class="wrapper">
                 <div class="even-columns">
-                    <div class="column-text">
+                    <div class="faded-left" id="column-text">
                         <h1>About me</h1>
                         <p>Full-Stack Web Developer | HTML/CSS & JavaScript | Python | React | Installs and tests user interface elements of websites.</p>
                         <form action="#contacts">
                             <button type="submit" class="button">Hire me</button>
                         </form>
                     </div>
-                    <div class="column-image">
+                    <div class="faded-right">
                         <img id="selfie-top" src="images/selfieB&W1.jpg" alt="selfie in circle frame black and white" width="75%" height="75%">
                     </div>
                 </div>
@@ -69,10 +72,10 @@
  
         <section class="introduction">
             <div class="wrapper">
-                <p>I am Full-stack web developer skilled in multiple programming languages, frameworks, and databases. 
+                <p class="faded-left">I am Full-stack web developer skilled in multiple programming languages, frameworks, and databases. 
                     I create web applications that are highly functional, responsive,
                     and scalable.</p>
-                <p> I offer a range of services related to website design and development, catering to the needs of 
+                <p class="faded-right"> I offer a range of services related to website design and development, catering to the needs of 
                     businesses and individuals who require a professional online presence.
                     Building websites from scratch or work on existing websites.
                     Custom website design, Landing page design, website customization, website maintenance, 
@@ -85,21 +88,21 @@
             <div class="wrapper">
                 <h1>Skills</h1>
                 <div class="even-columns">
-                    <div class="dev-icon">
+                    <div class="faded-left" id="dev-icon">
                         <img src="images/html-icon.png" alt="HTML5 icon" height= "68px" width="48px">
                         <p><strong>HTML</strong> is the primary markup language found on the internet.</p>
                     </div>
-                    <div class="dev-icon">
+                    <div class="faded-right" id="dev-icon">
                         <img id="css-icon" src="images/css-icon.png" alt="CSS3 icon" height= "67px" width="50px">
                         <p><strong>CSS</strong> is a cornerstone technology of the World Wide Web.</p>
                     </div>
                 </div>
                 <div class="even-columns">
-                    <div class="dev-icon">
+                    <div class="faded-left" id="dev-icon">
                         <img src="images/JavaScript-icon.png" alt="JavaScript icon" height= "68px" width="49px">
                         <p><strong>JavaScript</strong> is used to create dynamic website content.</p>
                     </div>
-                    <div class="dev-icon">
+                    <div class="faded-right" id="dev-icon">
                         <img id="python-icon" src="images/python-icon.png" alt="Python icon" height= "60px" width="60px">
                         <p><strong>Python</strong> is a high-level, general-purpose programming language.</p>
                     </div>
@@ -107,7 +110,7 @@
             </div>
         </section>
       
-        <section class="hidden" id="my-projects">
+        <section class="animation-pulse" id="my-projects">
             <div class="wrapper">
                     <h1>My Projects</h1>
                     <p>I build all of my projects from scratch, which involves designing the user interface, 
@@ -119,7 +122,7 @@
             <div class="wrapper">
 
                 
-                <div class="skewed skewed-left">
+                <div class="skewed skewed-left" id="zoom-in">
                     <div class="image">
                         <div>
                             <img
@@ -133,28 +136,28 @@
                     </div>
                 </div>
 
-                <div class="skewed">
-                    <div class="text">
-                        <h1>Musicon Store</h1>
-                        <p>This modern, responsive website was created using HTML5, CSS, and JavaScript.</p>
-                        <a href="https://petrzajkaswebdesign.github.io/MusicStore/index.html" target="_blank">Read More &rarr;</a>
-                    </div>
-                    <div class="image">
-                        <div>
-                            <img
-                                src="images/Musicon.png" alt="website main page, background image pink guitar">
+                <div class="skewed" id="heart-beat">
+                        <div class="text">
+                            <h1>Musicon Store</h1>
+                            <p>This modern, responsive website was created using HTML5, CSS, and JavaScript.</p>
+                            <a href="https://petrzajkaswebdesign.github.io/MusicStore/index.html" target="_blank">Read More &rarr;</a>
                         </div>
-                    </div>
+                        <div class="image">
+                            <div>
+                                <img
+                                    src="images/Musicon.png" alt="website main page, background image pink guitar">
+                            </div>
+                        </div>
                 </div>
 
                 <div class="wrapper">
                     <div class="even-columns">
-                        <div  id="myprojects">
-                            <img src="images/JetSpeedB&W.png" alt="screeshot of JetSpeed white website and blue background" width="273.2" height="153.6">
+                        <div class="faded-left" id="myprojects">
+                            <img src="images/JetSpeed.png" alt="screeshot of JetSpeed white website and blue background" width="273.2" height="153.6">
                             <a href="https://PetrZajkasWebdesign.github.io/JetSpeed-project/JetSpeed.html" target="_blank">Read More &rarr;</a>
                         </div>
-                        <div  id="myprojects">
-                            <img src="images/ChorebotB&W.png" alt="screenshot of chorebot game blue background" width="273.2" height="153.6">
+                        <div class="faded-right" id="myprojects">
+                            <img src="images/Chorebot.png" alt="screenshot of chorebot game blue background" width="273.2" height="153.6">
                             <a href="https://PetrZajkasWebdesign.github.io/Chore-Bot-Game/index.html" target="_blank">Read More &rarr;</a> 
                         </div>
                     </div>
@@ -162,7 +165,7 @@
            </div>  
         </section>  
         
-        <section class="hidden" id="Qualification">
+        <section class="animation-pulse" id="Qualification">
             <div class="wrapper">
                 <h1>Qualification</h1>
                 <p>
@@ -219,7 +222,7 @@
         
         <section>
             <div class="wrapper">
-                    <section id="contacts" class="hidden">
+                    <section class="animation-pulse" id="contacts">
                     <h1>Contacts</h1>
                      <p>If you have any questions or need more information, please don't hesitate to contact me. 
                         You can reach me through the following links:</p>
@@ -252,6 +255,11 @@
                 <p>Copyright © 2023 All Rights Reserved || PetrZajkasWebdesign</p>
             </div>
     </footer>
+    <script
+    src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script type="text/javascript">
         $('.main-carousel').flickity({
