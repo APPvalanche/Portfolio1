@@ -469,6 +469,10 @@ img {
     box-shadow: 0 8px 30px 0;
 }
 
+#my-projects {
+    background-color: transparent;
+}
+
 /* myprojects skewed */
 
 .myprojects p {
@@ -557,6 +561,10 @@ img {
         bottom: -5em;
      }
      
+}
+
+#Qualification {
+    background-color: transparent;
 }
 
 #contacts {
