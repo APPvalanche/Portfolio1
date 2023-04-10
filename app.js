@@ -24,11 +24,18 @@ $(document).ready(function () {
                 offset
             );
     
-            $("#zoom-in").waypoint(
+            $("#zoom-in1").waypoint(
                     function() {
-                    $("#zoom-in").addClass("animate__animated animate__zoomIn");
+                    $("#zoom-in1").addClass("animate__animated animate__zoomIn");
                 }, 
                 offset
+            );
+
+            $("#zoom-in2").waypoint(
+                function() {
+                $("#zoom-in2").addClass("animate__animated animate__zoomIn");
+            }, 
+            offset
             );
     
             $(".animation-pulse").waypoint(
@@ -48,6 +55,48 @@ $(document).ready(function () {
             $("#heart-beat").waypoint(
                 function() {
                 $("#heart-beat").addClass("animate__animated animate__heartBeat");
+            }, 
+            offset
+            );
+
+            $("#faded-left1").waypoint(
+                function() {
+                $("#faded-left1").addClass("animate__animated animate__fadeInLeft");
+            }, 
+            offset
+            );
+
+            $("#faded-left2").waypoint(
+                function() {
+                $("#faded-left2").addClass("animate__animated animate__fadeInLeft");
+            }, 
+            offset
+            );
+
+            $("#dev-icon1").waypoint(
+                function() {
+                $("#dev-icon1").addClass("animate__animated animate__fadeInLeft");
+            }, 
+            offset
+            );
+
+            $("#dev-icon2").waypoint(
+                function() {
+                $("#dev-icon2").addClass("animate__animated animate__fadeInLeft");
+            }, 
+            offset
+            );
+
+            $("#dev-icon3").waypoint(
+                function() {
+                $("#dev-icon3").addClass("animate__animated animate__fadeInLeft");
+            }, 
+            offset
+            );
+
+            $("#dev-icon4").waypoint(
+                function() {
+                $("#dev-icon4").addClass("animate__animated animate__fadeInLeft");
             }, 
             offset
             );

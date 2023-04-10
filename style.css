@@ -279,7 +279,10 @@ a {
     color: var(--clr-accent-600);
 }
 
-#dev-icon {
+#dev-icon1,
+#dev-icon2,
+#dev-icon3,
+#dev-icon4 {
     margin: 0;
     justify-content: center;
     align-items: center;
@@ -290,11 +293,17 @@ a {
     box-shadow: 0 0 10px white;
 }
 
-#dev-icon img {
+#dev-icon1 img,
+#dev-icon2 img,
+#dev-icon3 img,
+#dev-icon4 img {
     margin-left: 0.8rem ;
 }
 
-#dev-icon p {
+#dev-icon1,
+#dev-icon2,
+#dev-icon3,
+#dev-icon4 p {
     color: var(--clr-primary-200);
     padding: 0.5rem;
 }
@@ -364,19 +373,54 @@ p {
 .animation-pulse, 
 .faded-left, 
 .faded-right,
-#zoom-in,
-#heart-beat {
+#zoom-in1,
+#zoom-in2,
+#heart-beat,
+#faded-left1,
+#faded-left2,
+#dev-icon1,
+#dev-icon2,
+#dev-icon3,
+#dev-icon4 {
     opacity: 0;
 }
 
 .animation-pulse.animate__animated,
 .faded-left.animate__animated,
 .faded-right.animate__animated,
-#zoom-in.animate__animated,
-#heart-beat.animate__animated {
+#zoom-in1.animate__animated,
+#zoom-in2.animate__animated,
+#heart-beat.animate__animated,
+#faded-left1.animate__animated,
+#faded-left2.animate__animated,
+#dev-icon1.animate__animated,
+#dev-icon2.animate__animated,
+#dev-icon3.animate__animated,
+#dev-icon4.animate__animated {
 opacity: 1;
 animation-duration: 1.2s;
 }
+
+#zoom-in2 {
+    animation-delay: 0.15s;
+}
+
+#faded-left2 {
+    animation-delay: 0.15s;
+}
+
+#dev-icon2 {
+    animation-delay: 0.15s;
+}
+
+#dev-icon3 {
+    animation-delay: 0.30s;
+}
+
+#dev-icon4 {
+    animation-delay: 0.45s;
+}
+
 
 /* Section styles starts here */
 .wrapper {
@@ -490,7 +534,7 @@ img {
     color: #1f1f1f;
     display: flex;
     background: #111;
-    margin: 2em;
+    margin: 2em 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.70);
 }
 
@@ -535,6 +579,7 @@ img {
 
 .myprojects img {
     width: 140%;
+    border: 2px solid #111;
 }
 
 @media screen and (max-width: 750px) {
