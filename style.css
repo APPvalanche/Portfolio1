@@ -251,6 +251,8 @@ a {
     color: var(--clr-accent-600);
     border: solid 2px var(--clr-accent-600);
     border-radius: 0.1rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
 }
 
 .button-main:hover {
@@ -271,6 +273,8 @@ a {
     color: var(--clr-primary-900);
     background-color: var(--clr-accent-600);
     text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
 }
 
 .button:hover {
@@ -398,7 +402,7 @@ p {
 #dev-icon3.animate__animated,
 #dev-icon4.animate__animated {
 opacity: 1;
-animation-duration: 1.2s;
+animation-duration: 1s;
 }
 
 #zoom-in2 {
@@ -444,7 +448,7 @@ section {
 }
 
 #carousel {
-    background-color: var(--clr-primary-400);
+    background-color: transparent;
 }
 
 #carousel button {
