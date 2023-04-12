@@ -379,6 +379,7 @@ p {
 .faded-right,
 #zoom-in1,
 #zoom-in2,
+#zoom-in3,
 #heart-beat,
 #faded-left1,
 #faded-left2,
@@ -394,6 +395,7 @@ p {
 .faded-right.animate__animated,
 #zoom-in1.animate__animated,
 #zoom-in2.animate__animated,
+#zoom-in3.animate__animated,
 #heart-beat.animate__animated,
 #faded-left1.animate__animated,
 #faded-left2.animate__animated,
@@ -407,6 +409,10 @@ animation-duration: 1s;
 
 #zoom-in2 {
     animation-delay: 0.15s;
+}
+
+#zoom-in3 {
+    animation-delay: 0.30s;
 }
 
 #faded-left2 {

@@ -37,6 +37,13 @@ $(document).ready(function () {
             }, 
             offset
             );
+
+            $("#zoom-in3").waypoint(
+                function() {
+                $("#zoom-in3").addClass("animate__animated animate__zoomIn");
+            }, 
+            offset
+            );
     
             $(".animation-pulse").waypoint(
                     function() {
